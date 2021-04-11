@@ -10,8 +10,11 @@ import slider from './modules/slider';
 import tabs from './modules/tabs';
 import toggleMenu from './modules/toggleMenu';
 
+const now = new Date().getTime();
+const date = new Date(now + 86400000);
+
 sendForm();
-countTimer('14 march 2021');
+countTimer(date);
 toggleMenu();
 togglePopup();
 tabs();
